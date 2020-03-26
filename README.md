@@ -4,7 +4,7 @@ Reads all accessible subscriptions for a subset of Azure locations.
 Outputs a CSV file containing quota utilization you can open in Excel and filter.
 
 ## Usage
-This script uses Azure CLI, you can run this from your browser using [Azure Cloud Shell (bash)](https://docs.microsoft.com/en-us/azure/cloud-shell/overview), or install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) locally.
+This is a linux bash script which uses Azure CLI, you should run this from your browser using [Azure Cloud Shell (bash)](https://docs.microsoft.com/en-us/azure/cloud-shell/overview), or alternatively install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) locally on a Linux computer.
 1. Download Script
 ```
 wget -O quota.sh https://raw.githubusercontent.com/cliveg/quota/master/quota.sh
