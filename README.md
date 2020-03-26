@@ -19,6 +19,12 @@ nano quota.sh
 bash ./quota.sh
 ```
 
+4. Open the CSV file locally to analyze the results
+
+- Click Download from the Cloud Shell toolbar under 'Upload/Download Files' to download quota.csv and open it with Microsoft Excel. 
+
+- Convert the data to a table by pressing CTRL + A, and then CTRL + T. To add a column for percentage used, in cell ```I2``` add formula ```=[@currentValue]/[@limit]``` and set the Number Format to ```Percentage```.
+
 ## Links related to Requesting Quota Increases
 The standard vCPU quota is enforced at two tiers for each subscription in each region:
 
