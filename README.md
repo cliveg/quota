@@ -24,6 +24,7 @@ bash ./quota.sh
 - Click Download from the Cloud Shell toolbar under 'Upload/Download Files' to download quota.csv and open it with Microsoft Excel. 
 
 - Convert the data to a table by pressing CTRL + A, and then CTRL + T. To add a column for percentage used, in cell ```H2``` add formula ```=[@currentValue]/[@limit]``` and set the Number Format to ```Percentage```.
+- Use Conditional Formatting. Select column ```H``` and under the toolbar menu choose ```Conditional Formatting```, then ```Color Scales``` and then choose a scale e.g. ```Red - Yellow - Green Color Scale```.
 
 ## Links related to Requesting Quota Increases
 The standard vCPU quota is enforced at two tiers for each subscription in each region:
@@ -37,6 +38,10 @@ The total regional vCPU limit can't exceed the total approved quota across all V
 > [Standard quota: Increase limits by VM series](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/per-vm-quota-requests)
 
 > [Standard quota: Increase limits by region](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/regional-quota-requests)
+
+> [Request quota increases for Azure SQL Database](https://docs.microsoft.com/en-us/azure/sql-database/quota-increase-request)
+
+> [Manage and request quotas for Azure resources (for Machine Learning, but has broader coverage)](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-manage-quotas)
 
 ## Related Scripts
 [Azure Resource Quotas into a Log Analytics Workspace (Using PowerShell)](https://github.com/brandofriva/AzureQuotas) - Azure Automation script to enable monitoring and alerting.
